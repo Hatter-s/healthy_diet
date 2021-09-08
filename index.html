@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="p-5 text-light bg-success">
+        <h1 class="text-center">Thông tin của mọi người trong ngày</h1>
+        <h3 id="time">Hôm nay là:</h3>
+    </header>
+    <main class="text-dark text-center">
+        <h2>Bảng chỉ số của mọi người: </h2>
+        <p>Lưu ý chỉ số thay đổi theo ngày</p>
+        <table class='status'>
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Tên</th>
+                    <th scope="col">Cân nặng</th>
+                    <th scope="col">BMI</th>
+                    <th scope="col">TDEE</th>
+                    <th scope="col">Mục tiêu</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="dad">
+                    <td class="id">1</td>
+                    <td class="name">Nguyễn Xuân Thương</td>
+                    <td class="weight"></td>
+                    <td class="BMI"></td>
+                    <td class="TDEE"></td>
+                    <td class="goal"></td>
+                </tr>
+                <tr class="mom">
+                    <td class="id">2</td>
+                    <td class="name">Hà Thị Phương Lan</td>
+                    <td class="weight"></td>
+                    <td class="BMI"></td>
+                    <td class="TDEE"></td>
+                    <td class="goal"></td>
+                </tr>
+                <tr class="me">
+                    <td class="id">3</td>
+                    <td class="name">Nguyễn Hà Thành Vũ</td>
+                    <td class="weight"></td>
+                    <td class="BMI"></td>
+                    <td class="TDEE"></td>
+                    <td class="goal"></td>
+                </tr>
+                <tr class="sis">
+                    <td class="id">4</td>
+                    <td class="name">Nguyễn Hà Phương Linh</td>
+                    <td class="weight"></td>
+                    <td class="BMI"></td>
+                    <td class="TDEE"></td>
+                    <td class="goal"></td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Bảng số lượng mỗi ngày mỗi người cần ăn</h2>
+        <table class="consume">
+            <thead>
+                <tr>
+                    <th scope="col" rowspan="2">Id</th>
+                    <th scope="col" rowspan="2">Tên</th>
+                    <th scope="col" colspan="3">Lượng tiêu thụ</th>
+                </tr>
+                <tr>
+                    <th scope="col">Protein</th>
+                    <th scope="col">Carb (tinh bột)</th>
+                    <th scope="col">Fat (chất béo)</th>
+                </tr> 
+            </thead>
+            <tbody>
+                <tr class="dad">
+                    <td class="id">1</td>
+                    <td class="name">Nguyễn Xuân Thương</td>
+                    <td class="protein"></td>
+                    <td class="carb"></td>
+                    <td class="fat"></td>
+                </tr>
+                <tr class="mom">
+                    <td class="id">2</td>
+                    <td class="name">Hà Thị Phương Lan</td>
+                    <td class="protein"></td>
+                    <td class="carb"></td>
+                    <td class="fat"></td>
+                </tr>
+                <tr class="me">
+                    <td class="id">3</td>
+                    <td class="name">Nguyễn Hà Thành Vũ</td>
+                    <td class="protein"></td>
+                    <td class="carb"></td>
+                    <td class="fat"></td>
+                </tr>
+                <tr class="sis">
+                    <td class="id">4</td>
+                    <td class="name">Nguyễn Hà Phương Linh</td>
+                    <td class="protein"></td>
+                    <td class="carb"></td>
+                    <td class="fat"></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer class="bg-dark text-light">
+        <p class="m-0">Create by Thanh Vu</p>
+    </footer>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script type="module" src="./script/script.js"></script>
+</html>
